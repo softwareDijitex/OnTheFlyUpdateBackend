@@ -1,4 +1,5 @@
 from fastapi import FastAPI, UploadFile
+from fastapi.responses import FileResponse
 import tempfile
 uploadedFile: tempfile
 
@@ -20,3 +21,7 @@ def upload_file(file: UploadFile):
 @app.get("/getFile")
 def get_file():
     return uploadedFile
+
+@app.post("/downloadFile")
+async def download_file():
+    return FileResponse("IW317-WSEN_3_V01.00.ufw")
