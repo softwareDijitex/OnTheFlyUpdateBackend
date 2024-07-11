@@ -11,3 +11,4 @@
 1. run following on vm: fastapi run main.py
 
 4. swagger docs found at: [host]/docs ex: http://127.0.0.1:8000/docs
+
