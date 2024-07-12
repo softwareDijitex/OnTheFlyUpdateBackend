@@ -18,9 +18,9 @@ def upload_file(file: UploadFile):
     return {"filename" : file.filename,
             "success" : "true" }
 
-@app.get("/getFile")
-def get_file():
-    return uploadedFile
+# @app.get("/getFile")
+# def get_file():
+#     return uploadedFile
 
 @app.post("/downloadFile")
 async def download_file():
