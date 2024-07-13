@@ -1,15 +1,15 @@
-# syntax=docker/dockerfile:1
+# # syntax=docker/dockerfile:1
 
-FROM python:3.9
+# FROM python:3.9
 
-WORKDIR /code
+# WORKDIR /code
 
-COPY requirements.txt .
+# COPY requirements.txt .
 
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-COPY . .
+# COPY . .
 
-EXPOSE 3100
+# EXPOSE 3100
 
-CMD ["gunicorn", "main:app"]
+# CMD ["gunicorn", "main:app"]
