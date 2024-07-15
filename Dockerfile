@@ -1,15 +1,16 @@
-# syntax=docker/dockerfile:1
+# # syntax=docker/dockerfile:1
 
-FROM python:3.9
+# FROM python:3.10
 
-WORKDIR /
+# WORKDIR /code
 
-COPY requirements.txt .
+# COPY requirements.txt /code/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+# RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY . .
+# COPY . /code
 
-EXPOSE 8000
+# #EXPOSE 8000
 
-CMD ["gunicorn", "main:app"]
+# #CMD ["gunicorn", "main:app"]
+# CMD ["fastapi", "run", "main.py", "--port", "80"]
