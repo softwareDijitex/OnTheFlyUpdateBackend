@@ -1,5 +1,5 @@
 fastapi==0.63.0
 gunicorn==20.0.4
-uvicorn =  {extras = ["standard"], version = "^0.12.0"}
+uvicorn==0.30.1
 python-multipart
 
