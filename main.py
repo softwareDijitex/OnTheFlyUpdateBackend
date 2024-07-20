@@ -24,5 +24,5 @@ def get_latest_version():
 
 @app.post("/downloadFile")
 async def download_file():
-    print("------> file sent")
-    return FileResponse("IW317-WSEN_3_V01.00.ufw")
+    print("------> larger file sent")
+    return FileResponse("JAQBBDSP_02.12.ufw")
